@@ -1,0 +1,213 @@
+<html>
+
+    <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    
+    <style>
+::-webkit-scrollbar-button { 
+background-image:url(''); 
+background-repeat:no-repeat; 
+width:6px; 
+height:0px 
+} 
+ 
+::-webkit-scrollbar-track { 
+background-color:#96aab6; 
+box-shadow:0px 0px 3px #000 inset; 
+} 
+ 
+::-webkit-scrollbar-thumb { 
+-webkit-border-radius: 5px; 
+border-radius: 5px; 
+background-color:#1C6956; 
+box-shadow:0px 1px 1px #fff inset; 
+background-image:url('assets/59610063.png'); 
+background-position:center; 
+background-repeat:no-repeat; 
+} 
+ 
+::-webkit-resizer{ 
+background-image:url(''); 
+background-repeat:no-repeat; 
+width:7px; 
+height:0px 
+} 
+ 
+::-webkit-scrollbar{ 
+width: 11px; 
+}
+</style>
+    
+        
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body bgcolor = #d4dee4>
+       <style>
+                table, th, td {
+  border: 0px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+table#t01 {
+  width: 100%;    
+  background-color: #f1f1c1;
+}
+</style>
+       
+        <div id="object_button">
+            <a href  = 'index.html' style="color: white">Главная страница</a>
+        </div>
+            
+        <div id="object_button">
+            <a href  = 'support.html' style="color: white">Поддержка</a>
+        </div>
+            
+        <div id="object_button">
+            <a href  = 'settings.html' style="color: white">Настройки</a>
+        </div>
+            
+        <div style = "font-family: brush script mt"; align = "center"><h1>Simple analysis of the data</h1>
+        </div>
+<! modul_one: monitor>
+            
+        <div id="monitor" style="color: black; width: 77%; height: 67%; background: #B4C2CA; font-family: Roman; border: solid 1px black;  float: left">
+            <p>&nbsp &nbsp &nbsp Welcome..</p>
+           
+        </div>
+<! modul_two: input data>
+            
+        <script type="text/javascript" charset="UTF-8"src="script.js"></script>
+            
+        <div style="color: white; width: 22%; height: 67%; background: #1C6956; font-family: Roman; border: solid 1px black; float: right">
+            <p align="center"><textarea  id = "web_text_area" style= "background-color: #ffe; color: #930; name: comment; cols: 100; rows: 68; width: 85%; height: 85%"></textarea></p>
+            <p align="center"><input onclick="press_button()" id="main_button" type = "submit" value = "Отправить текст"></p>
+        </div>
+                 
+<! modul_three>
+        <div style="color: black; width: 100%; height: 1%; background: #d4dee4; font-family: Roman; border: solid 0px black;  float: left">     
+        </div>
+            
+       <div style="color: black; width: 100%; height: 23%; background: #96aab6; font-family: Roman; border: solid 1px black;  float: left">
+        <table style="width:95%">
+            <tr>
+                <td><p align="right"><input id="cash_check" name="check" type="checkbox" value="true" >...print cash check</td>
+            </tr> 
+        </table>
+           
+        <table style="width:50%">
+            <tr>
+                <td>date:</td>
+                <td style="background: #879dab"><p align="center"><input type="text" id="date_one" size="10">&nbsp &nbsp<input type="text" id="date_two" size="10"></p></td>
+                <td>...status: standart(or report) mode</td>
+            </tr> 
+            <tr>
+                <td></td>
+                <td style="background: #879dab">
+                    <p align="center">
+                    <select id="list" style = "width: 85%">
+                    <option selected>standart chief report</option>
+                    <option>classical report</option>
+                    <option>only one item</option>
+                    <option>online payment report</option>
+                    </select>
+                    </p>
+                <td>
+			     ...open this report in another window +
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="background: #879dab">
+                <p align="center"><input onclick="press_confirm()" id="confirm" type="submit" value="Confirm"></p>
+                </td>
+                <td></td>
+            </tr>
+	 	</table>     
+    </div>
+        
+        <div id="element">
+        </div>
+        
+        <script id="modul" type="text/html">
+   <table style="width: 60%"><tr>
+		 <td>
+
+        &nbsp&nbsp<select id="item"> <option disabled>option for only one item</option>
+		<option>ником сервис</option>
+        <option>пульты</option>
+        <option>багет</option> 
+	    <option>фнд</option>
+        <option>копия</option>
+        <option>печать</option>
+		</select> 
+
+	    <p>&nbsp&nbsp<select id="configuration"> <option>days</option>
+		<option>deals</option> <option>option for only one item</option></select>
+		
+
+		
+<table><tr>
+		 <td>
+	 <br>cash_gain
+	 <br>online_income
+	 <br>expense
+	<br>total_gain
+    </td>
+    <td>&nbsp
+    <br><input id="cash_gain" name="name" type="checkbox" value="true" >
+    <br><input id="online_income" name="name" type="checkbox" value="true" >
+    <br><input id="expense" name="name" type="checkbox" value="true" >
+<br><input id="total_gain" name="name" type="checkbox" value="true" >
+    </td>
+</table>
+
+		
+		<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<input  onclick="press_engage()" id="engage" type="submit" value="Engage">
+</td>
+<td style="vertical-align: top">
+<div style="overflow: auto; height: 250px" id="one_item_monitor">
+</div>
+</td>
+</tr>
+</table>
+</script>
+ <script id="modulOnlineIncome" type="text/html">
+<table style="width: 75%"><tr>
+		 <td>
+
+	    <p>&nbsp&nbsp<select id="configuration"> <option>days</option>
+		<option>deals</option> <option>option for only one item</option></select>
+			
+<table><tr>
+		 <td>
+	<br>sberbank
+	<br>tinkoff
+	<br>pochta-bank
+	<br>total
+    </td>
+    <td>&nbsp
+    <br><input id="sber" name="name" type="checkbox" value="true" >
+    <br><input id="tinkoff" name="name" type="checkbox" value="true" >
+    <br><input id="pochta_bank" name="name" type="checkbox" value="true" >
+	<br><input id="total" name="name" type="checkbox" value="true" >
+    	</td>
+</table>
+
+		<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<input  onclick="press_online_income()" id="online_income_button" type="submit" value="Engage">
+</td>
+<td style="vertical-align: top">
+<div style="overflow: auto; height: 250px" id="online_income_monitor">
+</div>
+</td>
+</tr>
+</table>
+</script>
+        
+    </body>     
+</html>
